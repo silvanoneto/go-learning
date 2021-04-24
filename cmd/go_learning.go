@@ -7,8 +7,8 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/silvanoneto/go-learning/chapter01"
-	"github.com/silvanoneto/go-learning/util"
+	"github.com/silvanoneto/go-learning/pkg/chapter01"
+	"github.com/silvanoneto/go-learning/pkg/util"
 )
 
 func main() {

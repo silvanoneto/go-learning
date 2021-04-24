@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/silvanoneto/go-learning/util"
+	"github.com/silvanoneto/go-learning/pkg/util"
 )
 
 // Exercise01 prints all command line arguments, separated by blank spaces
