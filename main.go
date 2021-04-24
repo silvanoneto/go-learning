@@ -1,4 +1,3 @@
-// Main execute the content on chapters packages
 package main
 
 import (
