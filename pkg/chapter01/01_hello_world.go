@@ -5,5 +5,6 @@ import "fmt"
 
 // HelloWorld prints a hello message
 func HelloWorld() {
-	fmt.Println("Hello, Silvano")
+
+	fmt.Println("Hello World!")
 }
