@@ -26,6 +26,10 @@ The cmd app supports the following functions/examples until now:
 - chapter01.Lissajous
 - chapter01.Exercise05
 - chapter01.Exercise06
+- chapter01.Fetch
+- chapter01.Exercise07
+- chapter01.Exercise08
+- chapter01.Exercise09
 
 The project has data file examples in examples/data folder that can be set as parameter.
 
