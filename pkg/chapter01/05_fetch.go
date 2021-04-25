@@ -1,3 +1,4 @@
+// Package chapter01 05_fetch contains the code studied on section 05
 package chapter01
 
 import (
@@ -9,6 +10,7 @@ import (
 	"strings"
 )
 
+// Fetch shows the content found for each specified URL
 func Fetch() {
 	for _, url := range os.Args[1:] {
 		resp, err := http.Get(url)
@@ -24,6 +26,8 @@ func Fetch() {
 	}
 }
 
+// Exercise07 changes Fetch function to copy the response body to the standard
+// output
 func Exercise07() {
 	for _, url := range os.Args[1:] {
 		resp, err := http.Get(url)
@@ -38,6 +42,7 @@ func Exercise07() {
 	}
 }
 
+// Exercise08 changes Fetch function to add http prefix when missing
 func Exercise08() {
 	for _, url := range os.Args[1:] {
 		hasHttpPrefix := strings.HasPrefix(url, "http://")
@@ -59,6 +64,7 @@ func Exercise08() {
 	}
 }
 
+// Exercise09 changes Fetch function to display HTTP status code
 func Exercise09() {
 	for _, url := range os.Args[1:] {
 		resp, err := http.Get(url)
