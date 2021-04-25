@@ -24,5 +24,8 @@ chsutil supports the following functions until now:
 - chapter01.Exercise07
 - chapter01.Exercise08
 - chapter01.Exercise09
+- chapter01.FetchAll
+- chapter01.Exercise10
+- chapter01.Exercise11
 
 You're opened to investigate how these functions works. ;)
