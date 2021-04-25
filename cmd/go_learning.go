@@ -4,7 +4,6 @@ import (
 	"flag"
 	"log"
 	"os"
-	"regexp"
 	"time"
 
 	"github.com/silvanoneto/go-learning/pkg/chsutil"
@@ -16,19 +15,8 @@ func main() {
 		"Name of function to be called")
 	flag.Parse()
 
-	os.Args = append([]string{os.Args[0]}, flag.Args()...)
-
 	if functionNamePtr == nil || len(*functionNamePtr) == 0 {
 		log.Fatal("You need to enter at least the name of a function." +
-			" Use -h for more information.")
-	}
-
-	isValid, err := regexp.MatchString(`chapter[0-9]+\..*`, *functionNamePtr)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	if !isValid {
-		log.Fatalln("The function name is invalid." +
 			" Use -h for more information.")
 	}
 
@@ -36,6 +24,8 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+
+	os.Args = append([]string{os.Args[0]}, flag.Args()...)
 
 	now := time.Now()
 	f()
