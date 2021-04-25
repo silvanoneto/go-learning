@@ -1,39 +1,15 @@
 # go-learning
 
-[![GitHub license](https://img.shields.io/github/license/silvanoneto/go-learning.svg)](https://github.com/silvanoneto/go-learning/blob/chapter_01/LICENSE)
-[![made-with-Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](http://golang.org)
 [![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/silvanoneto/go-learning.svg)](https://github.com/silvanoneto/go-learning)
+[![GoDoc reference example](https://img.shields.io/badge/godoc-reference-blue.svg)](https://pkg.go.dev/github.com/silvanoneto/go-learning)
 [![GoReportCard example](https://goreportcard.com/badge/github.com/silvanoneto/go-learning)](https://goreportcard.com/report/github.com/silvanoneto/go-learning)
-
+[![GitHub license](https://img.shields.io/github/license/silvanoneto/go-learning.svg)](https://github.com/silvanoneto/go-learning/blob/chapter_01/LICENSE)
 
 This repository contains my progress (re-)studying Go programming language based on "The Go Programming Language" book, written by Alan A. A. Donovan and Brian W. Kernighan ([gopl.io](https://www.gopl.io/ "The Go Programming Language")).
 
 ## CMD Application
 
-The cmd app supports the following functions/examples until now:
-
-- chapter01.HelloWorld
-- chapter01.Echo1
-- chapter01.Echo2
-- chapter01.Echo3
-- chapter01.Exercise01
-- chapter01.Exercise02
-- chapter01.Exercise03
-- chapter01.Dup1
-- chapter01.Dup2
-- chapter01.Dup3
-- chapter01.Exercise04
-- chapter01.Lissajous
-- chapter01.Exercise05
-- chapter01.Exercise06
-- chapter01.Fetch
-- chapter01.Exercise07
-- chapter01.Exercise08
-- chapter01.Exercise09
-
-The project has data file examples in examples/data folder that can be set as parameter.
-
-You're opened to investigate how these functions works. ;)
+The cmd app executes functions supported by [chsutil](https://github.com/silvanoneto/go-learning/tree/chapter_01/pkg/chsutil) package.
 
 ### How to run it locally (Docker)
 
