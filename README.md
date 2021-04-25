@@ -23,6 +23,9 @@ The cmd app supports the following functions/examples until now:
 - chapter01.Dup2
 - chapter01.Dup3
 - chapter01.Exercise04
+- chapter01.Lissajous
+- chapter01.Exercise05
+- chapter01.Exercise06
 
 The project has data file examples in examples/data folder that can be set as parameter.
 
