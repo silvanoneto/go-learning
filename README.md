@@ -38,7 +38,7 @@ docker run --rm silvanoneto/go-learning-cmd:chapter_01
 A command example that set a function and file names as parameters:
 
 ```sh
-docker run --rm go-learning-app /bin/sh -c "./go-learning -name chapter01.Exercise04 examples/data/01_03_dup_file1.txt examples/data/01_03_dup_file2.txt"
+docker run --rm go-learning-cmd:chapter_01 /bin/sh -c "./go-learning -name chapter01.Exercise04 examples/data/01_03_dup_file1.txt examples/data/01_03_dup_file2.txt"
 ```
 
 ### How to run it locally (Manual)
