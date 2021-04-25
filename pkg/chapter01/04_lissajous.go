@@ -19,7 +19,6 @@ func Lissajous() {
 	lissajous(os.Stdout, palette)
 }
 
-// lissajous implements the GIF creator
 func lissajous(out io.Writer, palette []color.Color) {
 	const (
 		cycles  = 5
