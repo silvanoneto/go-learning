@@ -8,7 +8,8 @@ import (
 )
 
 const (
-	Chapter01HelloWorld string = "chapter01.HelloWorld" // Chapter01HelloWorld is a function name from chapter01 package
+	// Chapter01HelloWorld is a function name from chapter01 package
+	Chapter01HelloWorld string = "chapter01.HelloWorld"
 	Chapter01Echo1      string = "chapter01.Echo1"      // Chapter01Echo1 is a function name from chapter01 package
 	Chapter01Echo2      string = "chapter01.Echo2"      // Chapter01Echo2 is a function name from chapter01 package
 	Chapter01Echo3      string = "chapter01.Echo3"      // Chapter01Echo3 is a function name from chapter01 package
