@@ -71,7 +71,7 @@ func Dup3() {
 	}
 }
 
-// CountList receives a text stream and count their unique lines
+// countLines receives a text stream and count their unique lines
 func countLines(f *os.File, counts map[string]int) {
 	input := bufio.NewScanner(f)
 	for input.Scan() {
