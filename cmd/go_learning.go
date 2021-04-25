@@ -7,13 +7,13 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/silvanoneto/go-learning/pkg/chapter01"
+	"github.com/silvanoneto/go-learning/pkg/chsutil"
 	"github.com/silvanoneto/go-learning/pkg/util"
 )
 
 func main() {
-	functionNamePtr := flag.String(
-		"name", "chapter01.HelloWorld", "Name of function to be called")
+	functionNamePtr := flag.String("name", chsutil.Chapter01HelloWorld,
+		"Name of function to be called")
 	flag.Parse()
 
 	os.Args = append([]string{os.Args[0]}, flag.Args()...)
@@ -32,31 +32,9 @@ func main() {
 			" Use -h for more information.")
 	}
 
-	functions := map[string]func(){
-		"chapter01.HelloWorld": chapter01.HelloWorld,
-		"chapter01.Echo1":      chapter01.Echo1,
-		"chapter01.Echo2":      chapter01.Echo2,
-		"chapter01.Echo3":      chapter01.Echo3,
-		"chapter01.Exercise01": chapter01.Exercise01,
-		"chapter01.Exercise02": chapter01.Exercise02,
-		"chapter01.Exercise03": chapter01.Exercise03,
-		"chapter01.Dup1":       chapter01.Dup1,
-		"chapter01.Dup2":       chapter01.Dup2,
-		"chapter01.Dup3":       chapter01.Dup3,
-		"chapter01.Exercise04": chapter01.Exercise04,
-		"chapter01.Lissajous":  chapter01.Lissajous,
-		"chapter01.Exercise05": chapter01.Exercise05,
-		"chapter01.Exercise06": chapter01.Exercise06,
-		"chapter01.Fetch":      chapter01.Fetch,
-		"chapter01.Exercise07": chapter01.Exercise07,
-		"chapter01.Exercise08": chapter01.Exercise08,
-		"chapter01.Exercise09": chapter01.Exercise09,
-	}
-
-	f := functions[*functionNamePtr]
-	if f == nil {
-		log.Fatalln("The function has not been encountered." +
-			" Use -h for more information.")
+	f, err := chsutil.GetFunction(*functionNamePtr)
+	if err != nil {
+		log.Fatalln(err)
 	}
 
 	now := time.Now()
