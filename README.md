@@ -26,7 +26,7 @@ The cmd app supports the following functions/examples until now:
 
 The project has data file examples in examples/data folder that can be set as parameter.
 
-You're opened to investigate how that functions works. ;)
+You're opened to investigate how these functions works. ;)
 
 ### How to run it locally (Docker)
 
