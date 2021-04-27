@@ -27,5 +27,9 @@ chsutil supports the following functions until now:
 - chapter01.FetchAll
 - chapter01.Exercise10
 - chapter01.Exercise11
+- chapter01.Server1
+- chapter01.Server2
+- chapter01.Server3
+- chapter01.Exercise12
 
 You're opened to investigate how these functions works. ;)

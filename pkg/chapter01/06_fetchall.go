@@ -1,4 +1,4 @@
-// Package chapter06 05_fetch contains the code studied on section 05
+// Package chapter01 06_fetchall contains the code studied on section 06
 package chapter01
 
 import (
