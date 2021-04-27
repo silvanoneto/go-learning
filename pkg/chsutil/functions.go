@@ -50,6 +50,14 @@ const (
 	Chapter01Exercise10 string = "chapter01.Exercise10"
 	// Chapter01Exercise11 is a function name from chapter01 package
 	Chapter01Exercise11 string = "chapter01.Exercise11"
+	// Chapter01Server1 is a function name from chapter01 package
+	Chapter01Server1 string = "chapter01.Server1"
+	// Chapter01Server2 is a function name from chapter01 package
+	Chapter01Server2 string = "chapter01.Server2"
+	// Chapter01Server3 is a function name from chapter01 package
+	Chapter01Server3 string = "chapter01.Server3"
+	// Chapter01Exercise12 is a function name from chapter01 package
+	Chapter01Exercise12 string = "chapter01.Exercise12"
 )
 
 // GetFunction finds a mapped function from chapters packages
@@ -76,6 +84,10 @@ func GetFunction(name string) (func(), error) {
 		Chapter01FetchAll:   chapter01.FetchAll,
 		Chapter01Exercise10: chapter01.Exercise10,
 		Chapter01Exercise11: chapter01.Exercise11,
+		Chapter01Server1:    chapter01.Server1,
+		Chapter01Server2:    chapter01.Server2,
+		Chapter01Server3:    chapter01.Server3,
+		Chapter01Exercise12: chapter01.Exercise12,
 	}
 
 	function := functions[name]
